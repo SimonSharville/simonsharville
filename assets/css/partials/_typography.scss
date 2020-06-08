@@ -1,0 +1,126 @@
+
+
+// Typography ------------------------------------------------------------------------------
+
+h1 {
+  font-family: 'ThinUltraCn', Helvetica, Arial, sans-serif;
+  color: $Orange;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  padding-top: 0.2em;
+}
+
+h4 {
+  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding-top: 0.4em;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  font-weight:300;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding-bottom: 0.5em;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+
+h2{
+  margin-bottom: -0.1em;
+}
+
+strong{ font-weight:700;}
+
+.left {text-align:left;}
+
+
+
+
+// FOLIO Typography -------------------------------------------------------------------------
+
+#webDesign #profilePage #folioPage, #pageTitle h1{
+  font-size: 6em;
+  color:black;
+}
+
+
+.intro{
+  padding-bottom:50px;
+}
+
+.quote{
+  text-indent:-0.2em;
+  margin-left:0px
+}
+
+.contact {
+    h3{ padding-bottom: 0.25em; }
+    p{ padding-bottom: 0em; }
+
+    
+}
+
+a:link { 
+  color: $Grey01;
+  text-decoration: none;
+}
+a:visited{ color: $Grey01;} 
+a:hover{ color: $Orange;} 
+
+
+
+// CARD Typography --------------------------------------------------------------------------
+
+#folioCards #pageTitle h1{
+  font-size: 6em;
+  color:white;
+}
+
+.card{
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+    color: $Grey01;
+    text-align:left;
+  }
+
+  p{
+    font-family: 'Roboto Slab', serif;
+    color: $Grey01;
+    font-weight:400;
+    font-size:12px;
+    line-height:15px;
+  }
+
+  h1{
+    font-size:32px;
+    line-height:32px;
+  } 
+
+  h2{
+    font-size:24px;
+    line-height:24px;
+    border-bottom: 1px solid $Grey07;
+    margin-bottom:5px;
+  } 
+
+  a:link { 
+    color: $Grey01;
+    text-decoration: none; 
+  }
+}
+
+

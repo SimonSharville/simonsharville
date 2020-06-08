@@ -1,0 +1,848 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'LightCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.svg#UniversLTStd-LightCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  /* Used for main headings */
+  font-family: 'LightUltraCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  /* Used for main headings */
+  font-family: 'ThinUltraCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.svg#UniversLTStd-ThinUltraCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LightCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.svg#UniversLTStd-LightCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  /* Used for main headings */
+  font-family: 'LightUltraCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  /* Used for main headings */
+  font-family: 'ThinUltraCn';
+  src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot);
+  src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.svg#UniversLTStd-ThinUltraCn) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+  color: #2F2B2D; }
+
+.statement {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  color: white;
+  font-weight: 400; }
+
+a:link {
+  color: #2F2B2D;
+  text-decoration: none; }
+
+html, body {
+  height: 100%; }
+
+/* IE8 "nuclear option"
+-------------------------------------------------------------- */
+#low-ie body > * {
+  display: none !important; }
+
+html#low-ie body > div.low-ie-message {
+  display: block !important;
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  font-family: 'LightUltraCn', serif;
+  color: black;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.5em;
+  padding-bottom: 0.5em; }
+  html#low-ie body > div.low-ie-message a:link {
+    color: white; }
+  html#low-ie body > div.low-ie-message a:visited {
+    color: white; }
+
+body {
+  background-color: #2F2B2D; }
+
+* {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: grayscale !important;
+  font-smoothing: antialiased !important; }
+
+.flex-container {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+  border: 1px dotted green;
+  bottom: 40px; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.bubble {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.bubble {
+  border-radius: 50%;
+  text-align: center;
+  background-color: white; }
+
+.bubble, .bubbleLink {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.bubbleLink:hover {
+  background-color: #DC7321;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
+.bubbleStatement {
+  border: solid 2px #DC7321;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.bubbleProfile {
+  background-image: url("../images/Profile/Simon_Sharville_900.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+  .bubbleProfile h3 {
+    color: white;
+    visibility: visible;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  .bubbleProfile:hover h3 {
+    visibility: visible;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+
+#indexFooter {
+  visibility: hidden; }
+
+@media (max-width: 319px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    padding-right: 0px;
+    padding-bottom: 20px; }
+
+  .bubble {
+    min-height: 150px;
+    min-width: 150px;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+  .bubbleStatement {
+    display: none; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #2F2B2D;
+    padding-left: 4px;
+    text-align: left; }
+
+  .logo h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 34px;
+    line-height: 29px;
+    margin-top: 3px;
+    margin-bottom: -7px;
+    word-spacing: -5px; }
+    .logo h1 .tight {
+      letter-spacing: -0.6px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleBranding {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
+
+  .bubbleShare {
+    margin-bottom: 50px;
+    top: 10px;
+    left: 30%;
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg); }
+    .bubbleShare .sb_main, .bubbleShare .sb_network_button {
+      -ms-transform: rotate(-90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-90deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(-90deg); } }
+@media (min-width: 320px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    padding-right: 0px;
+    padding-bottom: 20px; }
+
+  .bubble {
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+  .bubbleStatement {
+    display: inherit; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 4px;
+    text-align: left; }
+
+  .logo h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 54px;
+    line-height: 49px;
+    margin-top: 3px;
+    margin-bottom: -14px;
+    word-spacing: -8px; }
+    .logo h1 .tight {
+      letter-spacing: -0.98px; }
+
+  .statement {
+    font-size: 17px;
+    line-height: 18px;
+    margin-top: -5px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleBranding {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
+
+  .bubbleShare {
+    margin-bottom: 50px;
+    top: 10px;
+    left: 38%;
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg); }
+    .bubbleShare .sb_main, .bubbleShare .sb_network_button {
+      -ms-transform: rotate(-90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-90deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(-90deg); } }
+@media (min-width: 320px) and (orientation: landscape) {
+  .flex-container {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    height: 200px;
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    padding-right: 20px;
+    padding-bottom: 0px; }
+
+  .bubble {
+    min-height: 200px;
+    min-width: 200px;
+    margin-top: 0px;
+    margin-left: 20px; }
+
+  .bubbleStatement {
+    display: inherit; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 5px;
+    text-align: left; }
+
+  .logo h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 44px;
+    line-height: 39px;
+    margin-top: 3px;
+    margin-bottom: -10px;
+    word-spacing: -7px; }
+    .logo h1 .tight {
+      letter-spacing: -0.7px; }
+
+  .statement {
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: -5px;
+    letter-spacing: 0.25px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleClients, .bubbleProfile, .bubblePlayground, .bubbleIllustration, .bubbleCustard, .bubbleTshirts, .bubbleEmail, .bubbleLaughingBag, .bubbleLinkedIn, .bubbleBranding {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
+
+  .bubbleShare {
+    margin-right: 50px;
+    top: 34%;
+    left: 10px;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+    .bubbleShare .sb_main, .bubbleShare .sb_network_button {
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
+      -webkit-transform: rotate(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(0deg); } }
+@media (min-width: 480px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    padding-right: 0px;
+    padding-bottom: 20px; }
+
+  .bubble {
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+  .bubbleStatement {
+    display: inherit; } }
+@media (min-width: 480px) and (orientation: landscape) {
+  .flex-container {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    height: 200px;
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    padding-right: 20px;
+    padding-bottom: 0px; }
+
+  .bubble {
+    min-height: 200px;
+    min-width: 200px;
+    margin-top: 0px;
+    margin-left: 20px; }
+
+  .bubbleStatement {
+    display: inherit; } }
+@media (min-width: 768px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    position: relative;
+    min-width: 768px;
+    min-height: 1024px;
+    padding-right: 0px;
+    padding-bottom: 0px; }
+
+  .bubble {
+    position: absolute;
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+  .bubbleLogo {
+    top: 233px;
+    left: 335px;
+    min-height: 290px;
+    min-width: 290px; }
+
+  .bubbleStatement {
+    top: 513px;
+    left: 162px;
+    min-height: 353px;
+    min-width: 353px; }
+
+  .bubbleProfile {
+    top: 518px;
+    left: 520px;
+    min-height: 147px;
+    min-width: 147px; }
+
+  .bubbleWeb {
+    top: 115px;
+    left: 261px;
+    min-height: 147px;
+    min-width: 147px; }
+
+  .bubbleBranding {
+    top: 441px;
+    left: 55px;
+    min-height: 147px;
+    min-width: 147px; }
+
+  .bubblePrint {
+    top: 276px;
+    left: 70px;
+    min-height: 147px;
+    min-width: 147px; }
+
+  .bubblePlayground {
+    top: 387px;
+    left: 209px;
+    min-height: 112px;
+    min-width: 112px; }
+
+  .bubbleEmail {
+    top: 670px;
+    left: 605px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .bubbleIllustration {
+    top: 128px;
+    left: 422px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .bubbleLaughingBag {
+    top: 188px;
+    left: 165px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .bubbleTshirts {
+    top: 276px;
+    left: 235px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .bubbleCustard {
+    top: 150px;
+    left: 520px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .bubbleLinkedIn {
+    top: 678px;
+    left: 530px;
+    min-height: 60px;
+    min-width: 60px; }
+
+  .bubbleClients {
+    top: 605px;
+    left: 60px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .bubbleShare {
+    top: 450px;
+    left: 620px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 6px;
+    text-align: left; }
+
+  .logo h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 64px;
+    line-height: 56px;
+    margin-top: 3px;
+    margin-bottom: -13px;
+    word-spacing: -10px; }
+    .logo h1 .tight {
+      letter-spacing: -1px; }
+
+  .statement {
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: -7px;
+    letter-spacing: 0.25px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleBranding, .bubbleProfile {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
+
+  .bubblePlayground, .bubbleTshirts, .bubbleClients {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
+
+  .bubbleIllustration, .bubbleLaughingBag, .bubbleEmail {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.25px; }
+
+  .bubbleCustard {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0px; }
+
+  .bubbleLinkedIn {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.25px; }
+
+  .bubbleShare {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+    .bubbleShare .sb_main, .bubbleShare .sb_network_button {
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
+      -webkit-transform: rotate(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(0deg); } }
+@media (min-width: 1024px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+
+  .bubblewrap {
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: inline-flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+    padding-right: 0px;
+    padding-bottom: 0px; }
+
+  .bubble {
+    position: absolute;
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-left: 0px; }
+
+  .bubbleLogo {
+    top: 145px;
+    left: 278px;
+    height: 262px;
+    width: 262px; }
+
+  .bubbleStatement {
+    top: 245px;
+    left: 531px;
+    height: 318px;
+    width: 318px; }
+
+  .bubbleProfile {
+    top: 107px;
+    left: 536px;
+    min-height: 132px;
+    min-width: 132px; }
+
+  .bubbleWeb {
+    top: 340px;
+    left: 173px;
+    min-height: 132px;
+    min-width: 132px; }
+
+  .bubbleBranding {
+    top: 526px;
+    left: 466px;
+    min-height: 132px;
+    min-width: 132px; }
+
+  .bubblePrint {
+    top: 512px;
+    left: 317px;
+    min-height: 132px;
+    min-width: 132px; }
+
+  .bubblePlayground {
+    top: 419px;
+    left: 417px;
+    min-height: 101px;
+    min-width: 101px; }
+
+  .bubbleEmail {
+    top: 85px;
+    left: 672px;
+    min-height: 78px;
+    min-width: 78px; }
+
+  .bubbleCustard {
+    top: 249px;
+    left: 185px;
+    min-height: 78px;
+    min-width: 78px; }
+
+  .bubbleLaughingBag {
+    top: 480px;
+    left: 240px;
+    min-height: 78px;
+    min-width: 78px; }
+
+  .bubbleTshirts {
+    top: 418px;
+    left: 318px;
+    min-height: 78px;
+    min-width: 78px; }
+
+  .bubbleIllustration {
+    top: 68px;
+    left: 457px;
+    min-height: 78px;
+    min-width: 78px; }
+
+  .bubbleLinkedIn {
+    top: 174px;
+    left: 678px;
+    min-height: 60px;
+    min-width: 60px; }
+
+  .bubbleClients {
+    top: 578px;
+    left: 612px;
+    min-height: 78px;
+    min-width: 78px; }
+
+  .bubbleShare {
+    top: 165px;
+    left: 745px;
+    min-height: 88px;
+    min-width: 88px; }
+
+  .logo {
+    display: inline-block;
+    border-left: 2px solid #DC7321;
+    padding-left: 5px;
+    text-align: left;
+    position: absolute;
+    top: 90px;
+    left: 30px; }
+
+  .logo h1 {
+    top: 0px;
+    left: 0px;
+    font-size: 58px;
+    line-height: 50px;
+    margin-top: 3px;
+    margin-bottom: -12px;
+    word-spacing: -9px; }
+    .logo h1 .tight {
+      letter-spacing: -1px; }
+
+  .statement {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: -7px;
+    letter-spacing: 0.25px; }
+
+  .bubblePrint, .bubbleWeb, .bubbleBranding, .bubbleProfile {
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
+
+  .bubblePlayground, .bubbleTshirts, .bubbleClients {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
+
+  .bubbleIllustration, .bubbleEmail {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.25px; }
+
+  .bubbleLaughingBag {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 0.25px; }
+
+  .bubbleCustard {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px; }
+
+  .bubbleLinkedIn {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.25px; } }

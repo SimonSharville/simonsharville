@@ -1,0 +1,23 @@
+@import "partials/core-elements";
+
+// Typography ==============================================
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
+  color: $Grey01;
+}
+
+
+.statement{
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing:0.5px;
+  font-weight:100;
+  color: white;
+  font-weight:400;
+}
+
+a:link { 
+  color: $Grey01;
+  text-decoration: none; 
+}
+

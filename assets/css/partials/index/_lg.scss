@@ -1,0 +1,139 @@
+
+// lg sizes
+
+.flex-container{            // -webkit-  is for Safari
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+  -webkit-justify-content:  center;
+  justify-content:          center;
+  -webkit-align-items:      center;
+  align-items:              center;
+}
+
+.bubblewrap{
+  display:                  -webkit-inline-flex; /* Safari */
+  display:                  inline-flex;
+  -webkit-flex-flow:        column;
+  flex-flow:                column;
+
+  position:relative;
+  min-width:1024px;
+  min-height:768px;
+  padding-right:0px;
+  padding-bottom:0px;
+  // background-image: url("../../assets/images/index/IndexLogo_iPadMini_L.png");
+}
+
+.bubble{
+  position:absolute;
+  min-height:250px;
+  min-width:250px;
+  margin-top:20px;
+  margin-left:0px;
+}
+
+// Bubble positions ==========================================================
+
+.bubbleLogo{ top:145px; left:278px; height:262px; width:262px; }
+
+.bubbleStatement{ top:245px; left:531px; height:318px; width:318px; }
+
+.bubbleProfile{ top:107px; left:536px; min-height:132px; min-width:132px; }
+
+.bubbleWeb{ top:340px; left:173px; min-height:132px; min-width:132px; }
+
+.bubbleBranding{ top:526px; left:466px; min-height:132px; min-width:132px; }
+
+.bubblePrint{ top:512px; left:317px; min-height:132px; min-width:132px; }
+
+.bubblePlayground{ top:419px; left:417px; min-height:101px; min-width:101px; }
+
+.bubbleEmail{top:85px; left:672px;  min-height:78px; min-width:78px; }
+
+.bubbleCustard{top:249px; left:185px;  min-height:78px; min-width:78px; }
+
+.bubbleLaughingBag{top:480px; left:240px;  min-height:78px; min-width:78px; }
+
+.bubbleTshirts{top:418px; left:318px;  min-height:78px; min-width:78px; }
+
+.bubbleIllustration{top:68px; left:457px;  min-height:78px; min-width:78px; }
+
+.bubbleLinkedIn{top:174px; left:678px;  min-height:60px; min-width:60px; }
+
+.bubbleClients{top:578px; left:612px;  min-height:78px; min-width:78px; }
+
+.bubbleShare{top:165px; left:745px;  min-height:88px; min-width:88px; }
+
+
+// TYPE SIZES ==================================================================
+
+.logo{
+  display:inline-block;
+  border-left: 2px solid $Orange;
+  padding-left:5px;
+  text-align:left;
+  position:absolute;
+  top:90px;
+  left:30px;
+
+}
+
+.logo h1{
+  top:0px;
+  left:0px;
+  font-size:58px;
+  line-height:50px;
+  margin-top: 3px;
+  margin-bottom: -12px;
+  word-spacing:-9px;
+  .tight{ 
+    letter-spacing:-1px;
+  }
+}
+
+.statement{
+  font-size: 20px;
+  line-height: 22px;
+  margin-top:-7px;
+  letter-spacing:0.25px;
+}
+
+.bubblePrint, .bubbleWeb, .bubbleBranding, .bubbleProfile {
+  font-size:36px;
+  font-weight:normal;
+  letter-spacing:0.5px;
+  }
+
+
+.bubblePlayground, .bubbleTshirts, .bubbleClients {
+  font-size:30px;
+  font-weight:normal;
+  letter-spacing:0.5px;
+}
+
+.bubbleIllustration, .bubbleEmail {
+  font-size:24px;
+  font-weight:normal;
+  letter-spacing:0.25px;
+}
+
+.bubbleLaughingBag {
+  font-size:22px;
+  font-weight:normal;
+  letter-spacing:0.25px;
+}
+
+.bubbleCustard {
+  font-size:18px;
+  font-weight:normal;
+  letter-spacing:0px;
+}
+
+.bubbleLinkedIn {
+  font-size:20px;
+  font-weight:normal;
+  letter-spacing:0.25px;
+}
+
+
+

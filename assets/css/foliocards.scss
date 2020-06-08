@@ -1,0 +1,49 @@
+@import "partials/reset";
+@import "partials/core-elements";
+@import "partials/typography";
+
+
+
+// Global Styles ======================================================================
+html, body{  margin: 0; }
+
+* {
+  margin: 0;
+    -webkit-font-smoothing: antialiased!important;
+    -moz-font-smoothing: grayscale!important;
+    font-smoothing: antialiased!important;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.smoothScroll {
+    position:fixed;
+    bottom:0px;
+    background-color: $Grey08;
+    border-radius:50%;
+    content: url("../images/global/arrow-up.png");
+    background-repeat: no-repeat;
+    width:40px;
+    margin: 15px 10px;
+    display:none;
+    &:hover{
+      background-color: $Orange;
+    }
+  }
+
+
+
+// ====================================================================================
+
+@import "partials/cards/cards-slide";
+@import "partials/cards/cards";
+
+
+// ====================================================================================
+
+
+
+
