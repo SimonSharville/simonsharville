@@ -1,0 +1,1 @@
+$.fn.strech_text=function(){var t=$(this),s=t.width(),e=t.html(),n=$('<span class="stretch_it">'+e+"</span>"),c=t.text().length,h=s/c,a;if(t.html(n),(a=n.width())<s){var i=a/c,r=h-i+(h-i)/c;n.css({"letter-spacing":r})}else n.contents().unwrap(),t.addClass("justify")},$(document).ready((function(){$(".stretch").each((function(){$(this).strech_text()}))}));

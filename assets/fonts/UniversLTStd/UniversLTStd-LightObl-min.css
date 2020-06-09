@@ -1,0 +1,10 @@
+/* Webfont: UniversLTStd-LightObl */
+@font-face {
+  font-family: 'UniversLTStd45Light';
+  src: url("UniversLTStd-LightObl.eot");
+  /* IE9 Compat Modes */
+  src: url("UniversLTStd-LightObl.eot?#iefix") format("embedded-opentype"), url("UniversLTStd-LightObl.woff") format("woff"), url("UniversLTStd-LightObl.ttf") format("truetype"), url("UniversLTStd-LightObl.svg#UniversLTStd-LightObl") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
