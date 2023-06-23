@@ -54,6 +54,7 @@ table {
   src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.svg#UniversLTStd-LightCn) format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   /* Used for main headings */
   font-family: 'LightUltraCn';
@@ -61,6 +62,7 @@ table {
   src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn) format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   /* Used for main headings */
   font-family: 'ThinUltraCn';
@@ -68,6 +70,7 @@ table {
   src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.svg#UniversLTStd-ThinUltraCn) format("svg");
   font-weight: normal;
   font-style: normal; }
+
 html, body {
   margin: 0; }
 
@@ -85,6 +88,7 @@ html, body {
 
 h1 {
   font-family: 'ThinUltraCn', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   color: #DC7321;
   font-size: 5em; }
 
@@ -136,10 +140,12 @@ strong {
 
 .quote {
   text-indent: -0.2em;
-  margin-left: 0px; }
+  margin-left: 0px;
+  padding-bottom: 0; }
 
 .contact h3 {
   padding-bottom: 0.25em; }
+
 .contact p {
   padding-bottom: 0em; }
 
@@ -155,8 +161,10 @@ a:hover {
 
 article h2 a:link {
   color: #837C7D; }
+
 article h2 a:visited {
   color: #837C7D; }
+
 article h2 a:hover {
   color: #DC7321; }
 
@@ -174,22 +182,28 @@ article h2 a:hover {
 
 .clientList a:link:nth-child(odd) {
   color: #564F50; }
+
 .clientList a:visited:nth-child(odd) {
   color: #564F50; }
+
 .clientList a:hover:nth-child(odd) {
   color: #DC7321; }
 
 .clientList a:link:nth-child(even) {
   color: #837C7D; }
+
 .clientList a:visited:nth-child(even) {
   color: #837C7D; }
+
 .clientList a:hover:nth-child(even) {
   color: #DC7321; }
 
 .masonry h3 {
   padding: 0.25em  0.25em  0em     0.25em; }
+
 .masonry h4 {
   padding: 0       0.25em  0.25em  0.25em; }
+
 .masonry h5 {
   border-top: 1px solid #D7D2D2;
   margin: 0.25em       0.25em  0.25em  0.25em; }
@@ -265,8 +279,10 @@ nav ul a:link {
   text-align: center;
   color: white;
   padding: 8px 0 2px 0; }
+
 nav ul a:visited {
   color: white; }
+
 nav ul a:hover {
   color: white;
   background-color: black;
@@ -366,22 +382,19 @@ aside {
   .imgZoom1 {
     min-width: 101%;
     margin-left: -5px; }
-
   .imgZoom2 {
     min-width: 102.5%;
     margin-left: -10px; }
-
   .imgZoom3 {
     min-width: 103%;
     margin-left: -12px; }
-
   .imgZoom4 {
     min-width: 104%;
     margin-left: -15px; }
-
   .imgZoom5 {
     min-width: 105%;
     margin-left: -20px; } }
+
 .twoImages {
   display: table; }
   .twoImages > img {
@@ -556,20 +569,24 @@ aside {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1; } }
+
 @media only screen and (min-width: 700px) {
   .masonry {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2; } }
+
 @media only screen and (min-width: 900px) {
   .masonry {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3; } }
+
 @media only screen and (min-width: 1100px) {
   .masonry {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4; } }
+
 .masonryitem img {
   margin-top: -0.5em; }

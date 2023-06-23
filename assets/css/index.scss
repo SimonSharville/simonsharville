@@ -1,6 +1,4 @@
 
-
-
 @import "partials/reset";
 @import "partials/core-elements";
 @import "partials/index/typography";
@@ -8,7 +6,7 @@
 // ====================================================================================
 
 html, body {
-  height: 100%; 
+  height: 100%;
 }
 
 /* IE8 "nuclear option"
@@ -67,7 +65,7 @@ body {
 
 // Kept as reference =======================
 // .bubblewrap{
-//   display:                  -webkit-flex; 
+//   display:                  -webkit-flex;
 //   display:                  flex;
 //   -webkit-flex-flow:        row;
 //   flex-flow:                row;
@@ -75,9 +73,9 @@ body {
 //   justify-content:          center;
 //   -webkit-align-items:      center;
 //   align-items:              center;
-//   -webkit-flex-wrap:        wrap; 
+//   -webkit-flex-wrap:        wrap;
 //   flex-wrap:                wrap;
-//   -webkit-align-content:    center; 
+//   -webkit-align-content:    center;
 //   align-content:            center;
 // }
 // ========================================
@@ -94,7 +92,7 @@ body {
 
   // -webkit-flex-flow:        row;
   // flex-flow:                row;
-  
+
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
@@ -156,7 +154,7 @@ body {
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 
-  
+
 }
 
 .bubbleStatement{
@@ -172,10 +170,10 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-color:transparent;
-  
 
-  h3{ 
-    color:white; 
+
+  h3{
+    color:white;
     visibility:visible;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -183,8 +181,8 @@ body {
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
   }
-  &:hover{ 
-    h3{ 
+  &:hover{
+    h3{
       visibility:visible;
       -webkit-transition: all 0.5s ease-out;
       -moz-transition: all 0.5s ease-out;
@@ -211,28 +209,35 @@ body {
 // =======================
 
 // COMMON BREAKPOINTS
-@media (max-width:319px) // xxs - smaller than iPhone4 width 
-{ @import "partials/index/xxs"; }
+@media (max-width:319px){  // xxs - smaller than iPhone4 width
+  @import "partials/index/xxs";
+}
 
-@media (min-width:320px) // xs - mobile portrait 
-{ @import "partials/index/xs"; }
+@media (min-width:320px){  // xs - mobile portrait
+  @import "partials/index/xs";
+}
 
-@media (min-width:320px) and (orientation: landscape) // xs - mobile landscape 
-{ @import "partials/index/xs_landscape"; }
+@media (min-width:320px) and (orientation: landscape){  // xs - mobile landscape
+  @import "partials/index/xs_landscape";
+}
 
-@media (min-width:480px) // sm - mobile landcape 
-{ @import "partials/index/sm"; }
+@media (min-width:480px){  // sm - mobile landcape
+  @import "partials/index/sm";
+}
 
-@media (min-width:480px) and (orientation: landscape) // sm - mobile landscape 
-{ @import "partials/index/sm_landscape"; }
+@media (min-width:480px) and (orientation: landscape){  // sm - mobile landscape
+  @import "partials/index/sm_landscape";
+}
 
-@media (min-width:768px) // md - tablet portrait 
-{ @import "partials/index/md"; }
+@media (min-width:768px){  // md - tablet portrait
+  @import "partials/index/md";
+}
 
-@media (min-width:1024px) // lg - tablet landscape 
-{ @import "partials/index/lg"; }
+@media (min-width:1024px) { // lg - tablet landscape
+  @import "partials/index/lg";
+}
 
-// @media (min-width:1224px) // xl - desktop 
+// @media (min-width:1224px) // xl - desktop
 // { @import "partials/index/xl"; }
 
 

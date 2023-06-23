@@ -64,22 +64,22 @@ strong{ font-weight:700;}
 
 .quote{
   text-indent:-0.2em;
-  margin-left:0px
+  margin-left:0px;
 }
 
 .contact {
     h3{ padding-bottom: 0.25em; }
     p{ padding-bottom: 0em; }
 
-    
+
 }
 
-a:link { 
+a:link {
   color: $Grey01;
   text-decoration: none;
 }
-a:visited{ color: $Grey01;} 
-a:hover{ color: $Orange;} 
+a:visited{ color: $Grey01;}
+a:hover{ color: $Orange;}
 
 
 
@@ -108,18 +108,18 @@ a:hover{ color: $Orange;}
   h1{
     font-size:32px;
     line-height:32px;
-  } 
+  }
 
   h2{
     font-size:24px;
     line-height:24px;
     border-bottom: 1px solid $Grey07;
     margin-bottom:5px;
-  } 
+  }
 
-  a:link { 
+  a:link {
     color: $Grey01;
-    text-decoration: none; 
+    text-decoration: none;
   }
 }
 

@@ -4,6 +4,7 @@
 
 h1 {
   font-family: 'ThinUltraCn', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   color: $Orange;
   font-size: 5em;
 }
@@ -69,22 +70,23 @@ strong{ font-weight:700;}
 
 .quote{
   text-indent:-0.2em;
-  margin-left:0px
+  margin-left:0px;
+  padding-bottom: 0;
 }
 
 .contact {
     h3{ padding-bottom: 0.25em; }
     p{ padding-bottom: 0em; }
 
-    
+
 }
 
-a:link { 
+a:link {
   color: $Grey01;
   text-decoration: none;
 }
-a:visited{ color: $Grey01;} 
-a:hover{ color: $Orange;} 
+a:visited{ color: $Grey01;}
+a:hover{ color: $Orange;}
 
 
 article{
@@ -106,12 +108,12 @@ article{
     word-wrap: break-word;
 }
 
-.clientList{ 
+.clientList{
   a:link:nth-child(odd){ color: $Grey03; }
   a:visited:nth-child(odd){ color: $Grey03; }
   a:hover:nth-child(odd){ color: $Orange; }
   }
-.clientList{ 
+.clientList{
   a:link:nth-child(even){ color: $Grey05; }
   a:visited:nth-child(even){ color: $Grey05; }
   a:hover:nth-child(even){ color: $Orange; }

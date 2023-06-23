@@ -54,6 +54,7 @@ table {
   src: url(../fonts/UniversLTStd/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightCn.svg#UniversLTStd-LightCn) format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   /* Used for main headings */
   font-family: 'LightUltraCn';
@@ -61,6 +62,7 @@ table {
   src: url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn) format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   /* Used for main headings */
   font-family: 'ThinUltraCn';
@@ -68,6 +70,7 @@ table {
   src: url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.eot?#iefix) format("embedded-opentype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.woff) format("woff"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.ttf) format("truetype"), url(../fonts/UniversLTStd/UniversLTStd-ThinUltraCn.svg#UniversLTStd-ThinUltraCn) format("svg");
   font-weight: normal;
   font-style: normal; }
+
 h1 {
   font-family: 'ThinUltraCn', Helvetica, Arial, sans-serif;
   color: #DC7321;
@@ -120,6 +123,7 @@ strong {
 
 .contact h3 {
   padding-bottom: 0.25em; }
+
 .contact p {
   padding-bottom: 0em; }
 
@@ -141,20 +145,24 @@ a:hover {
   font-family: 'LightUltraCn', Helvetica, Arial, sans-serif;
   color: #2F2B2D;
   text-align: left; }
+
 .card p {
   font-family: 'Roboto Slab', serif;
   color: #2F2B2D;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px; }
+
 .card h1 {
   font-size: 32px;
   line-height: 32px; }
+
 .card h2 {
   font-size: 24px;
   line-height: 24px;
   border-bottom: 1px solid #B9B3B4;
   margin-bottom: 5px; }
+
 .card a:link {
   color: #2F2B2D;
   text-decoration: none; }
@@ -461,82 +469,71 @@ header {
 @media (max-width: 319px) {
   .card-container {
     width: 100%; }
-
   .card {
     width: 100%;
     -webkit-flex-flow: column;
     flex-flow: column; }
-
   .image {
     width: 100%;
     border-radius: 6px 6px 0px 0px; }
-
   .cardtext {
     width: 100%;
     padding: 10px 7px 5px 7px; }
-
   .cardtitle {
     width: 100%; } }
+
 @media (min-width: 320px) {
   .card-container {
     width: 100%; }
-
   .card {
     display: inherit;
     width: 100%;
     min-height: 200px; }
-
   .image {
     width: 33.3%;
     min-height: 220px;
     border-radius: 6px 0px 0px 6px; }
-
   .cardtext {
     width: 66.6%;
     padding: 12px 5px 0px 10px; }
-
   .cardtitle {
     width: 100%; } }
+
 @media (min-width: 480px) {
   .card-container {
     width: 50%;
     max-width: 230px;
     min-height: 100%; }
-
   .card {
     display: -webkit-flex;
     display: flex;
     width: 100%;
     -webkit-flex-flow: column;
     flex-flow: column; }
-
   .image {
     width: 100%;
     min-height: 200px;
     border-radius: 6px 6px 0px 0px; }
-
   .cardtext {
     padding: 10px 7px 0px 7px;
     width: 100%; }
-
   .cardtags {
     min-height: 37px; } }
+
 @media (min-width: 768px) {
   .card-container {
     width: 50%;
     max-width: 230px;
     min-height: 200px; }
-
   .card {
     width: 100%; } }
+
 @media (min-width: 1024px) {
   #container {
     max-width: 1024px; }
-
   .card-container {
     width: 50%;
     max-width: 230px;
     min-height: 200px; }
-
   .card {
     width: 100%; } }
